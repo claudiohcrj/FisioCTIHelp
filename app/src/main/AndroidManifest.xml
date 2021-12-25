@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FisioCTIHelp">
         <activity
+            android:name=".MainActivityPaO2Ideal"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityAjusFIO2"
             android:exported="false" />
         <activity
