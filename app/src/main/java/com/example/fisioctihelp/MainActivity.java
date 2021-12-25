@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonAjusFreqResp, buttonAjusFIO2, tmpbuttonAjusFreqResp, tmpbuttonAjusFIO2;
+    private Button buttonAjusFreqResp, buttonAjusFIO2, tmpbuttonAjusFreqResp, tmpbuttonAjusFIO2, buttonPaO2Ideal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, MainActivityAjusFIO2.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonPaO2Ideal = findViewById(R.id.buttonPaO2Ideal);
+        buttonPaO2Ideal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, MainActivityPaO2Ideal.class);
                 startActivity(intent);
             }
         });

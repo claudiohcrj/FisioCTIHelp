@@ -16,16 +16,16 @@
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPaO2Ideal" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonPaO2Ideal"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="148dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="148dp"
-        android:text="Button"
+        android:text="PaO2Ideal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAjusFIO2" />
