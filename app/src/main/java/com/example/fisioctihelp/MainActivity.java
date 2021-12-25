@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, MainActivityAjusFreqResp.class);
+                Intent intent = new Intent(MainActivity.this, MainActivityAjusFIO2.class);
                 startActivity(intent);
             }
         });

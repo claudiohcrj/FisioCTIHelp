@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FisioCTIHelp">
         <activity
+            android:name=".MainActivityAjusFIO2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityAjusFreqResp"
             android:exported="false"
             android:label="@string/title_activity_main_ajus_freq_resp"
