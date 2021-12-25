@@ -7,26 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivityAjusFreqResp">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="200dp"
-        android:text="___"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
-
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTextfatual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
+        android:hint="Informe a F Atual"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,48 +36,63 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="200dp"
+        android:layout_marginEnd="150dp"
         android:text="Resultado:"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPaCO2Alvo" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/editTextPaCO2Atual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
+        android:hint="Informe a PaCO2 atual"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextfatual" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/editTextPaCO2Alvo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
+        android:hint="Informe a PaCO2 alvo"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPaCO2Atual" />
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.FisioCTIHelp.AppBarOverlay" />
+
+    <Button
+        android:id="@+id/buttonCalcFreqResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="150dp"
+        android:onClick="buttonCalcFreqResp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPaCO2Alvo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
